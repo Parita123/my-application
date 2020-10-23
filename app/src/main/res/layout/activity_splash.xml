@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backstyle"
+    android:gravity="center"
+    tools:context=".SplashActivity">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:shadowColor="#4CAF50"
+        android:shadowDx="6"
+        android:shadowDy="6"
+        android:shadowRadius="6"
+        android:text="Login"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/amarante" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/mob1"
+        android:hint="Enter MobileNumber"
+        app:hintTextColor="#673AB7"
+        android:textColorHint="#000000"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxStrokeWidth="10dp"
+        app:boxCornerRadiusBottomEnd="5dp"
+        app:boxCornerRadiusTopStart="5dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        android:layout_marginBottom="30dp"
+        app:boxStrokeColor="@color/colorPrimary"
+        android:theme="@style/TextLabel"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            >
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/pass1"
+        android:hint="Enter Password"
+        app:hintTextColor="#673AB7"
+        app:counterMaxLength="15"
+        app:counterEnabled="true"
+        android:textColorHint="#000000"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxStrokeWidth="10dp"
+        app:boxCornerRadiusBottomEnd="5dp"
+        app:boxCornerRadiusTopStart="5dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxStrokeColor="@color/colorPrimary"
+        android:theme="@style/TextLabel"
+        android:layout_marginBottom="15dp"
+        app:passwordToggleEnabled="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            >
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/buttonsub"
+        android:drawableRight="@drawable/ic_insert_emoticon_black_24dp"
+        android:fontFamily="@font/amarante"
+        android:padding="15dp"
+        android:text="Submit"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+
+</LinearLayout>
